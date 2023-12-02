@@ -1,0 +1,37 @@
+@media all and (max-width: 575px){
+    #Header .overlay .main-txt h1{
+        font-size: 30px;
+        font-weight: 200;
+    }
+    #Clients .my-img {
+        width: 20%;
+      }
+    #Clients .text{
+        width: 100% !important;
+    }  
+}
+@media all and (min-width: 576px) and (max-width: 767px){
+    #Header .overlay .main-txt h1{
+        font-size: 30px;
+        font-weight: 200;
+    }
+    #Clients .my-img {
+        width: 15%;
+      }
+    #Clients .text{
+        width: 100% !important;
+    }  
+}
+@media all and (min-width: 768px) and (max-width: 991px){
+    #Clients .my-img {
+        width: 13%;
+      }
+    #Clients .text{
+        width: 100% !important;
+    }  
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media all and (min-width: 1200px) {
+}

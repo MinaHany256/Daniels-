@@ -1,0 +1,508 @@
+:root {
+  --main-color: #343434;
+  --secondary-color: #1c1c1c;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif ;
+}
+body {
+  font-family: "Poppins", sans-serif ;
+}
+.main-color {
+  color: var(--main-color) ;
+}
+.main-background-color {
+  background-color: var(--main-color) ;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* Global Classes and variables */
+
+/*start of Header*/
+
+#Header .navbar {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#Header .navbar .container > a {
+  font-family: "Montserrat", sans-serif ;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+#Header .navbar .container .navbar-nav .nav-item {
+  padding: 10px;
+}
+#Header .navbar .container .navbar-nav .nav-item a {
+  font-size: 14px;
+  color: #111111;
+  font-weight: 400;
+}
+#Header{
+  background-image: url(../Image/imgs/bg.jpg);
+  background-position: center ;
+  background-size: cover;
+  position: relative;
+}
+#Header .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#Header .main-txt-icon a{
+    border: 2px solid transparent;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+} 
+#Header .overlay .main-txt h5{
+  font-size: 50px ;
+  font-weight: 800 ;
+  line-height: 55px;
+  color: #fff;
+}
+#Header .overlay .main-txt h1{
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 200;
+  color: #fff;
+}
+#Header .overlay .main-txt h1 span{
+  font-weight: 400;
+}
+/*End of Header*/
+/*start of About*/
+#About .progress{
+    height: 25px;
+    box-shadow: 0px 0px 10px 1px rgba(184,180,180,0.75) inset;
+}
+#About .progress-bar{
+    background-color: var(--secondary-color);
+}
+
+#About .progress h6{
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 13px;
+}    
+#About h3{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 33px;
+    color: var(--main-color);
+}
+#About .section-txt > span{
+    font-weight: 400 ;
+    line-height: 20px ;
+    font-size: 14px ;
+    letter-spacing: 3px;
+    color: #999999;
+}
+#About .section-txt p{
+    font-weight: 400 ;
+    line-height: 24px ;
+    font-size: 15px ;
+}
+#About .section-txt p span{
+    font-weight: 700 ;
+}
+#About .section-txt .button2  button{
+    border-color: var(--secondary-color);
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    
+}
+#About .section-txt .button2 button:hover{
+    background-color: var(--secondary-color) ;
+}
+#About .section-txt .button1  button{
+    background-color: var(--secondary-color);
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    border-color: var(--secondary-color);
+}
+#About .section-txt .button1 button:hover{
+    background-color: transparent ;
+    border-color: var(--secondary-color);
+    color: var(--main-color) !important;
+}
+#About .img::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../Image/imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+/*End of About*/
+/*Start of Services*/
+#Services{
+    background-color: #F7F7F7;
+}
+#Services .service-body{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+ .txt-header h3{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    color: var(--main-color);
+    display: inline-block;
+    position: relative;
+    z-index: 4;
+}
+ .txt-header h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../Image/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+#Services .service-body i{
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    background-color: #F7F7F7;
+    border-color: #F7F7F7 ;
+    transition: all 0.5s;
+}
+#Services .service-body h6{
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--main-color);
+}
+#Services .service-body p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #748182;
+}
+#Services .service-body:hover i{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+#Services .my-icon{
+  border-color: #F7F7F7 !important;
+}
+/*End of Services*/
+/*start of works*/
+#Works .img .overlay{
+ left: 5px;
+ right: 5px;
+ bottom: 5px;
+ top: 5px;
+ background-color: rgba(255, 255, 255, 0.95);
+}
+#Works .img .overlay i{
+  width: 30px;
+  height: 30px;
+  background-color:var(--secondary-color);
+  border-color: var(--secondary-color) ;
+}
+#Works .img .overlay h6{
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--main-color);
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+#Works .img .overlay .text{
+  bottom: 15px;
+  opacity: 0;
+  transition: all 0.4s 0.1s;
+}
+#Works .img:hover .text{
+  bottom: 0px;
+  opacity: 1;
+}
+#Works .img .overlay .icon{
+  top: 10px;
+  opacity: 0;
+  transition: all 0.4s 0.1s ;
+}
+#Works .img:hover .icon{
+  top: 0px;
+  opacity: 1;
+}
+#Works .img .overlay i{
+  border-color: var(--secondary-color) !important;
+  color: #fff !important;
+}
+#Works .img i:hover{
+  color: var(--secondary-color) !important;
+  background-color: transparent !important;
+}
+#Works .img .overlay{
+  top: 5%;
+  opacity: 0;
+  transition: all 0.5s ;
+}
+#Works .img:hover .overlay{
+  opacity: 1;
+  top: 5px;
+}
+#Works .nav .nav-item button{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+}
+#Works .nav .nav-item .active{
+  background-color: transparent;
+}
+#Works .nav .nav-item button{
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+
+#Works .nav .nav-item button::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #111;
+  position: absolute;
+  left: 12px;
+  bottom: 0;
+  transition: all 0.4s;
+  z-index: -1;
+}
+#Works .nav .nav-item1 .active::after{
+  width: 52%;
+}
+#Works .nav .nav-item2 .active::after{
+  width: 67%;
+}
+#Works .nav .nav-item3 .active::after{
+  width: 72%;
+}
+#Works .nav .nav-item4 .active::after{
+  width: 75%;
+}
+/*End of works*/
+/*start of clients*/
+#Clients{
+  background-color: #F7F7F7;
+}
+#Clients .my-img {
+  width: 7%;
+}
+#Clients .text p{
+  font-weight: 400 ;
+  font-size: 15px ;
+  line-height: 24px ;
+}
+#Clients .text h6{
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--main-color);
+  line-height: 18px;
+}
+#Clients .text span{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+}
+#Clients .my-indicator button{
+  width: 10px;
+  height: 10px;
+  background-color: #d6d6d6 !important;
+  margin: 0 10px 0 10px;
+}
+#Clients .my-indicator button.active{
+  background-color: #869791 !important;
+}
+#Clients .my-indicator button:hover{
+  background-color: #869791 !important; 
+}
+/*End of clients*/
+/*start of numbers*/
+.numbers h3{
+  font-weight: 900;
+  color: var(--secondary-color);
+  line-height: 33px;
+  font-size: 30px;
+}
+.numbers p{
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 15px;
+}
+/*End of numbers*/
+/*start of team*/
+#Team .card-body{
+  background-color: #5B5B5B !important;
+}
+#Team .card-body h4{
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 28px;
+}
+#Team .card-body h5{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+}
+#Team{
+  background-color: #F7F7F7;
+}
+#Team .card .overlay{
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  transform: scale(0.5);
+  background-color:  rgba(255, 255, 255, 0.95);
+}
+#Team .card .overlay .icons i{
+  width: 40px;
+  height: 40px;
+  border-color: var(--secondary-color) !important;
+  background-color: var(--secondary-color) !important;
+}
+#Team .card .overlay .icons i:hover{
+  background-color: #fff !important;
+  color: var(--secondary-color) !important;
+}
+#Team .card .img{
+  overflow: hidden;
+}
+#Team .card .img img{
+  transition: all 0.5s;
+}
+#Team .card .img:hover img{
+  transform: scale(1.2);
+}
+#Team .card:hover .overlay{
+transform: scale(1) rotateY(360deg);
+  opacity: 1;
+}
+#Team .card .overlay{
+  transition: all 0.8s;
+  opacity: 0;
+}
+/*End of team*/
+/*start of contact*/
+#Contact .row .text i{
+  width: 55px;
+  height: 55px;
+  background-color: #F4F4F4 ;
+  border-color: #F4F4F4 !important;
+  transition: all 0.5s;
+}
+#Contact .row .text h6{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  line-height: 18px;
+}
+#Contact .row .text p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#Contact .row .text:hover i{
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-color: var(--secondary-color) !important;
+}
+#Contact input{
+  height: 35px;
+  background-color: #F4F4F4;
+}
+#Contact textarea{
+  height: 150px;
+  max-height: 150px !important;
+  background-color: #F4F4F4;
+}
+#Contact input:focus , textarea{
+  outline: none;
+}
+#Contact button{
+  background-color: var(--secondary-color) !important;
+  width: 130px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+#Contact button:hover{
+  background-color: #ffffff !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--secondary-color);
+}
+/*End of contact*/
+/*start of footer*/
+.footer{
+  background-color: var(--secondary-color);
+  
+}
+.footer p{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #748182;
+}
+/*End of footer*/
+
+/*navbar animation*/
+#Header .navbar .navbar-nav .nav-item a{
+  position: relative;
+}
+#Header .navbar .navbar-nav .nav-item a::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #111;
+  position: absolute;
+  left: 9px;
+  bottom: 7px;
+  transition: all 0.4s;
+  z-index: -1;
+}
+#Header .navbar .navbar-nav .nav-item1 .active::after{
+  width: 68%;
+}
+#Header .navbar .navbar-nav .nav-item2 .active::after{
+  width: 67%;
+}
+#Header .navbar .navbar-nav .nav-item3 .active::after{
+  width: 76%;
+}
+#Header .navbar .navbar-nav .nav-item4 .active::after{
+  width: 71%;
+}
+#Header .navbar .navbar-nav .nav-item5 .active::after{
+  width: 75%;
+}
+#Header .navbar .navbar-nav .nav-item6 .active::after{
+  width: 71%;
+}
+#Header .navbar .navbar-nav .nav-item7 .active::after{
+  width: 75%;
+}
